@@ -1,16 +1,23 @@
 function checkPrime(num) {
-    let count=0;
-    for(let i=2; i<=num; i++){
-        if(num%i==0){
+    let count = 0;
+    for(let i = 2; i <= num; i++){
+        if(num%i == 0){
             count++;
-        }
-       
+        }    
     }
-    if(count==1){
+    if(count == 1){
         return true;
     }else{
         return false;
     }
 }
 let n=13;
-console.log(n+" is Prime ="+checkPrime(n));
+ let ans = checkPrime(n);
+ 
+ if(ans == true){
+   console.log(n,"  is a prime number");
+   }
+  else{
+   console.log(n," is not a prime number");
+  }
+ 
