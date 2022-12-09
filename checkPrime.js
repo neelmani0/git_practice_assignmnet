@@ -4,11 +4,12 @@ function checkPrime(num) {
         if(num%i==0){
             count++;
         }
-        if(count==1){
-            return true;
-        }else{
-            return false;
-        }
+       
+    }
+    if(count==1){
+        return true;
+    }else{
+        return false;
     }
 }
 let n=13;
